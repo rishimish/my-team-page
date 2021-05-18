@@ -27,7 +27,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-  - [Built With](#built-with)
+- [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
@@ -36,8 +36,9 @@
 
 ## Overview
 
-![screenshot]("images/Screenshot-mobile.jpg")
-![screenshot]("images/Screenshot-desktop.png")
+![Screenshot-desktop](https://user-images.githubusercontent.com/42747614/118717106-3cf5e680-b843-11eb-9371-38928da23639.png)
+![Screenshot-mobile](https://user-images.githubusercontent.com/42747614/118717098-3b2c2300-b843-11eb-8a85-d2a800a6e749.jpg)
+
 
 ### Built With
 
