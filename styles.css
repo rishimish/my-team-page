@@ -1,179 +1,139 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=PT+Serif");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=PT+Serif&family=Montserrat");
+
 * {
-  /* padding: 0;
-  margin: 0; */
-  font-family: "Poppins", monospace;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-  background: rgba(250, 250, 250, 1);
-  margin: 0 24px;
+  font-family: Poppins;
+  color: #000;
+  margin: 0 12px;
 }
-.content {
+
+.header {
+  font-family: PT Serif;
   display: flex;
   flex-wrap: wrap;
-
-  /* align-items: center;
-  justify-content: space-evenly; */
+  padding-top: 70px;
 }
 
-.img-name {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-
-  /* identical to box height */
-
-  color: #000000;
-}
-.img-occupation {
-  font-family: PT Serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-
-  /* identical to box height */
-  text-transform: uppercase;
-
-  color: #000000;
-
-  transform: rotate(90deg);
-}
-.content-title {
-  flex: 1;
-  /* text-align: center; */
-  width: 278px;
-  height: 47px;
-  left: 243px;
-  top: 110px;
-
-  font-family: PT Serif;
-  font-style: normal;
+.header-title {
   font-weight: bold;
   font-size: 36px;
-  line-height: 48px;
-  letter-spacing: -0.045em;
-
-  color: #000000;
+  margin-bottom: 35px;
 }
 
-.content-sub {
-  flex: 1;
-  gap: 20px;
-}
-.content-sub-heading {
-  width: 117px;
-  height: 27px;
-  left: 736px;
-  top: 110px;
-
-  font-family: Poppins;
-  font-style: normal;
+.content-title {
+  margin-bottom: 10px;
+  font-size: 18px;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-
-  /* identical to box height */
   text-transform: uppercase;
-
-  color: #000000;
 }
+
 .content-text {
-  width: 439px;
-  height: 87px;
-  left: 736px;
-  top: 147px;
-
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
-  line-height: 27px;
-
-  color: #000000;
+  font-weight: normal;
+  margin-right: 30px;
 }
 
-.images {
+.main {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  grid-auto-rows: 1fr;
+  gap: 30px 20px;
+  padding-bottom: 120px;
+}
+
+.card:nth-child(2),
+.card:nth-child(4),
+.card:nth-child(6) {
+  margin-top: 40px;
+}
+
+.wrapper {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  align-items: flex-start;
+  justify-content: start;
 }
 
-.images .first-03-img {
-  flex: 1;
-}
-.img-01-full {
-  flex: 1;
-}
-.img-01 {
-  width: 138.72px;
-  height: 261.4px;
-  left: 478px;
-  top: 244.5px;
-}
-.img-02-full {
-  flex: 1;
-}
-.img-02 {
-  width: 305.21px;
-  height: 471px;
-  left: 534.64px;
-  top: 396px;
-}
-.img-03-full {
-  flex: 1;
-}
-.img-03 {
-  width: 300.81px;
-  height: 399.96px;
-  left: 863.54px;
-  top: 330px;
-}
-.images .last-03-img {
-  flex: 1;
-}
-.img-04-full {
-  flex: 1;
-}
-.img-04 {
-  width: 276.68px;
-  height: 469px;
-  left: 241px;
-  top: 760px;
-}
-.img-05-full {
-  flex: 1;
-}
-.img-05 {
-  width: 274.36px;
-  height: 360px;
-  left: 534.64px;
-  top: 944px;
-}
-.img-06-full {
-  flex: 1;
-}
-.img-06 {
-  width: 335.75px;
-  height: 449px;
-  left: 864.69px;
-  top: 796px;
-}
-footer {
-  text-align: center;
+.card-img {
+  flex: 7;
+  min-width: 140px;
+  width: 100%;
 }
 
-footer p {
-  text-align: center;
-  margin-bottom: 24px;
+.name {
+  margin-top: 10px;
+  font-weight: 600;
   font-size: 14px;
+}
+
+.job {
+  font-size: 10px;
+  font-family: PT Serif;
+  writing-mode: vertical-lr;
+  text-transform: uppercase;
+}
+
+.footer p {
+  font-size: 14px;
+  font-family: Montserrat;
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 24px;
   color: #999;
 }
 
-footer p a {
+.footer a {
   color: #999;
-  font-weight: bold;
   text-decoration: none;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0 100px;
+  }
+
+  .header {
+    padding-top: 110px;
+    justify-content: space-between;
+  }
+
+  .content-text {
+    max-width: 440px;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 50px;
+  }
+
+  .card:nth-child(4),
+  .card:nth-child(6) {
+    margin: 0px;
+  }
+
+  .card:nth-child(2),
+  .card:nth-child(5) {
+    margin-top: 80px;
+  }
+
+  .card-img {
+    max-width: 100%;
+  }
+
+  .job {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
 }
